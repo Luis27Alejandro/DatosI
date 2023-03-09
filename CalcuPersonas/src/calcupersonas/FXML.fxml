@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calcupersonas.FXMLController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#33c2ee" height="60.0" layoutX="81.0" layoutY="61.0" stroke="BLACK" strokeType="INSIDE" width="341.0" />
+      <Button fx:id="Agregar" layoutX="90.0" layoutY="408.0" mnemonicParsing="false" onAction="#AgregarPersona" text="Agregar" />
+      <Button fx:id="suma" layoutX="230.0" layoutY="433.0" mnemonicParsing="false" onAction="#Suma" text="+" />
+      <Button fx:id="resta" layoutX="294.0" layoutY="433.0" mnemonicParsing="false" onAction="#Resta" text="−" />
+      <Button fx:id="mult" layoutX="361.0" layoutY="433.0" mnemonicParsing="false" onAction="#Multipicacion" text="×" />
+      <Button fx:id="divi" layoutX="429.0" layoutY="433.0" mnemonicParsing="false" onAction="#Division" text="÷" />
+      <ChoiceBox fx:id="provincia" layoutX="72.0" layoutY="268.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="persona1" layoutX="300.0" layoutY="250.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="persona2" layoutX="300.0" layoutY="328.0" prefWidth="150.0" />
+      <Label layoutX="87.0" layoutY="64.0" prefHeight="54.0" prefWidth="94.0" text="Resultado:" />
+      <Label layoutX="341.0" layoutY="208.0" text="Persona 1:" />
+      <Label layoutX="340.0" layoutY="293.0" text="Persona 2:" />
+      <Label layoutX="77.0" layoutY="155.0" prefHeight="40.0" prefWidth="150.0" text="Información de la Persona" />
+      <Label layoutX="19.0" layoutY="216.0" text="Nombre:" />
+      <Label layoutX="18.0" layoutY="272.0" text="Provincia" />
+      <Label layoutX="36.0" layoutY="332.0" text="Edad:" />
+      <TextField fx:id="nombre" layoutX="72.0" layoutY="212.0" />
+      <TextField fx:id="edad" layoutX="72.0" layoutY="328.0" />
+      <Accordion layoutX="154.0" layoutY="17.0" />
+      <Label fx:id="resultado" layoutX="149.0" layoutY="62.0" prefHeight="60.0" prefWidth="266.0" text="" />
+   </children>
+</AnchorPane>
